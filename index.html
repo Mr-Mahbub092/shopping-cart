@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div {
+      width: 350px;
+      height: auto;
+      padding: 10px;
+      margin: 50px auto;
+      border: 2px solid blue;
+      display: grid;
+      grid-gap: 10px;
+      text-align: center;
+    }
+  </style>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js"></script>
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+  <main>
+    <h1 class="text-4xl font-semibold text-center my-12 text-red-500">Flower Cards</h1>
+    <section class="flex justify-between m-4">
+      <div class="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center" id="cards">
+
+        <!-- card 01 -->
+        <div class="card card-compact bg-base-100 shadow-xl max-w-xs">
+          <figure><img class="h-[350px]"  src="./images/Rectangle 6.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Rose!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p class="font-medium">Price: 5 $</p>
+            <div class="card-actions">
+              <button onclick="setButton(this)" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 02 -->
+        <div class="card card-compact bg-base-100 shadow-xl max-w-xs">
+          <figure><img class="h-[350px]" src="./images/pngwing 10.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Shapla!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p class="font-medium">Price: 3 $</p>
+            <div class="card-actions">
+              <button onclick="setButton(this)" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 03 -->
+        <div class="card card-compact bg-base-100 shadow-xl max-w-xs">
+          <figure><img class="h-[350px]" src="./images/pngwing 7.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">Unknown!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p class="font-medium">Price: 7 $</p>
+            <div class="card-actions">
+              <button onclick="setButton(this)" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 04 -->
+        <div class="card card-compact bg-base-100 shadow-xl max-w-xs">
+          <figure><img class="h-[350px]" src="./images/Rectangle 4.png" alt="Shoes" /></figure>
+          <div class="card-body">
+            <h2 class="card-title">unknown2!</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p class="font-medium">Price: 12 $</p>
+            <div class="card-actions">
+              <button onclick="setButton(this)" class="btn btn-primary">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div id="pricing" class="w-1/2 md:w-2/5 lg:w-[25%] m-2 p-3 text-center">
+        <h3 class="font-semibold">Price:</h3>
+        <hr>
+        <div id="added-items" class="text-left mb-4">
+
+        </div>
+
+        <p>Total :<span id="total">00</span> $</p>
+        <p>Discount :<span id="discount">00</span> $</p>
+        <hr class="my-6">
+        <p>Grand Total: <span id="grand-total">00</span> $</p>
+
+      </div>
+    </section>
+  </main>
+
+
+  <script src="./scripts.js"></script>
+</body>
+
+</html>
